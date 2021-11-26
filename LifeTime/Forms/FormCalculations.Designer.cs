@@ -1,4 +1,4 @@
-﻿namespace Days
+﻿namespace LifeTime.Forms
 {
     partial class FormCalculations
     {
@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCalculations));
             this.pParameters = new System.Windows.Forms.Panel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gbSorting = new System.Windows.Forms.GroupBox();
             this.rbResultByTypes = new System.Windows.Forms.RadioButton();
             this.rbResultByDates = new System.Windows.Forms.RadioButton();
             this.nudMonthesStep = new System.Windows.Forms.NumericUpDown();
@@ -50,7 +50,7 @@
             this.colDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colInfo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pParameters.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.gbSorting.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudMonthesStep)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudWeeksStep)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudDaysStep)).BeginInit();
@@ -62,7 +62,8 @@
             // 
             // pParameters
             // 
-            this.pParameters.Controls.Add(this.groupBox1);
+            resources.ApplyResources(this.pParameters, "pParameters");
+            this.pParameters.Controls.Add(this.gbSorting);
             this.pParameters.Controls.Add(this.nudMonthesStep);
             this.pParameters.Controls.Add(this.nudWeeksStep);
             this.pParameters.Controls.Add(this.nudDaysStep);
@@ -76,195 +77,136 @@
             this.pParameters.Controls.Add(this.chbSeconds);
             this.pParameters.Controls.Add(this.nudSecondsStep);
             this.pParameters.Controls.Add(this.btCalculate);
-            this.pParameters.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pParameters.Location = new System.Drawing.Point(0, 0);
             this.pParameters.Name = "pParameters";
-            this.pParameters.Size = new System.Drawing.Size(220, 682);
-            this.pParameters.TabIndex = 0;
             // 
-            // groupBox1
+            // gbSorting
             // 
-            this.groupBox1.Controls.Add(this.rbResultByTypes);
-            this.groupBox1.Controls.Add(this.rbResultByDates);
-            this.groupBox1.Location = new System.Drawing.Point(9, 165);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 45);
-            this.groupBox1.TabIndex = 13;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Результат";
+            resources.ApplyResources(this.gbSorting, "gbSorting");
+            this.gbSorting.Controls.Add(this.rbResultByTypes);
+            this.gbSorting.Controls.Add(this.rbResultByDates);
+            this.gbSorting.Name = "gbSorting";
+            this.gbSorting.TabStop = false;
             // 
             // rbResultByTypes
             // 
-            this.rbResultByTypes.AutoSize = true;
+            resources.ApplyResources(this.rbResultByTypes, "rbResultByTypes");
             this.rbResultByTypes.Checked = true;
-            this.rbResultByTypes.Location = new System.Drawing.Point(3, 19);
             this.rbResultByTypes.Name = "rbResultByTypes";
-            this.rbResultByTypes.Size = new System.Drawing.Size(74, 17);
-            this.rbResultByTypes.TabIndex = 1;
             this.rbResultByTypes.TabStop = true;
-            this.rbResultByTypes.Text = "По видам";
             this.rbResultByTypes.UseVisualStyleBackColor = true;
             // 
             // rbResultByDates
             // 
-            this.rbResultByDates.AutoSize = true;
-            this.rbResultByDates.Location = new System.Drawing.Point(121, 19);
+            resources.ApplyResources(this.rbResultByDates, "rbResultByDates");
             this.rbResultByDates.Name = "rbResultByDates";
-            this.rbResultByDates.Size = new System.Drawing.Size(73, 17);
-            this.rbResultByDates.TabIndex = 0;
-            this.rbResultByDates.Text = "По датам";
             this.rbResultByDates.UseVisualStyleBackColor = true;
             // 
             // nudMonthesStep
             // 
-            this.nudMonthesStep.Location = new System.Drawing.Point(83, 139);
+            resources.ApplyResources(this.nudMonthesStep, "nudMonthesStep");
             this.nudMonthesStep.Maximum = new decimal(new int[] {
             1935228928,
             7,
             0,
             0});
             this.nudMonthesStep.Name = "nudMonthesStep";
-            this.nudMonthesStep.Size = new System.Drawing.Size(126, 20);
-            this.nudMonthesStep.TabIndex = 11;
-            this.nudMonthesStep.ThousandsSeparator = true;
             // 
             // nudWeeksStep
             // 
-            this.nudWeeksStep.Location = new System.Drawing.Point(83, 113);
+            resources.ApplyResources(this.nudWeeksStep, "nudWeeksStep");
             this.nudWeeksStep.Maximum = new decimal(new int[] {
             1935228928,
             7,
             0,
             0});
             this.nudWeeksStep.Name = "nudWeeksStep";
-            this.nudWeeksStep.Size = new System.Drawing.Size(126, 20);
-            this.nudWeeksStep.TabIndex = 10;
-            this.nudWeeksStep.ThousandsSeparator = true;
             // 
             // nudDaysStep
             // 
-            this.nudDaysStep.Location = new System.Drawing.Point(83, 87);
+            resources.ApplyResources(this.nudDaysStep, "nudDaysStep");
             this.nudDaysStep.Maximum = new decimal(new int[] {
             1935228928,
             7,
             0,
             0});
             this.nudDaysStep.Name = "nudDaysStep";
-            this.nudDaysStep.Size = new System.Drawing.Size(126, 20);
-            this.nudDaysStep.TabIndex = 9;
-            this.nudDaysStep.ThousandsSeparator = true;
             // 
             // nudHoursStep
             // 
-            this.nudHoursStep.Location = new System.Drawing.Point(83, 61);
+            resources.ApplyResources(this.nudHoursStep, "nudHoursStep");
             this.nudHoursStep.Maximum = new decimal(new int[] {
             1935228928,
             7,
             0,
             0});
             this.nudHoursStep.Name = "nudHoursStep";
-            this.nudHoursStep.Size = new System.Drawing.Size(126, 20);
-            this.nudHoursStep.TabIndex = 8;
-            this.nudHoursStep.ThousandsSeparator = true;
             // 
             // nudMinutesStep
             // 
-            this.nudMinutesStep.Location = new System.Drawing.Point(83, 35);
+            resources.ApplyResources(this.nudMinutesStep, "nudMinutesStep");
             this.nudMinutesStep.Maximum = new decimal(new int[] {
             1935228928,
             7,
             0,
             0});
             this.nudMinutesStep.Name = "nudMinutesStep";
-            this.nudMinutesStep.Size = new System.Drawing.Size(126, 20);
-            this.nudMinutesStep.TabIndex = 7;
-            this.nudMinutesStep.ThousandsSeparator = true;
             // 
             // chbMonthes
             // 
-            this.chbMonthes.AutoSize = true;
-            this.chbMonthes.Location = new System.Drawing.Point(12, 141);
+            resources.ApplyResources(this.chbMonthes, "chbMonthes");
             this.chbMonthes.Name = "chbMonthes";
-            this.chbMonthes.Size = new System.Drawing.Size(67, 17);
-            this.chbMonthes.TabIndex = 5;
-            this.chbMonthes.Text = "Месяцы";
             this.chbMonthes.UseVisualStyleBackColor = true;
             // 
             // chbWeeks
             // 
-            this.chbWeeks.AutoSize = true;
-            this.chbWeeks.Location = new System.Drawing.Point(12, 115);
+            resources.ApplyResources(this.chbWeeks, "chbWeeks");
             this.chbWeeks.Name = "chbWeeks";
-            this.chbWeeks.Size = new System.Drawing.Size(64, 17);
-            this.chbWeeks.TabIndex = 4;
-            this.chbWeeks.Text = "Недели";
             this.chbWeeks.UseVisualStyleBackColor = true;
             // 
             // chbDays
             // 
-            this.chbDays.AutoSize = true;
-            this.chbDays.Location = new System.Drawing.Point(12, 89);
+            resources.ApplyResources(this.chbDays, "chbDays");
             this.chbDays.Name = "chbDays";
-            this.chbDays.Size = new System.Drawing.Size(47, 17);
-            this.chbDays.TabIndex = 3;
-            this.chbDays.Text = "Дни";
             this.chbDays.UseVisualStyleBackColor = true;
             // 
             // chbHours
             // 
-            this.chbHours.AutoSize = true;
-            this.chbHours.Location = new System.Drawing.Point(12, 63);
+            resources.ApplyResources(this.chbHours, "chbHours");
             this.chbHours.Name = "chbHours";
-            this.chbHours.Size = new System.Drawing.Size(54, 17);
-            this.chbHours.TabIndex = 2;
-            this.chbHours.Text = "Часы";
             this.chbHours.UseVisualStyleBackColor = true;
             // 
             // chbMinutes
             // 
-            this.chbMinutes.AutoSize = true;
-            this.chbMinutes.Location = new System.Drawing.Point(12, 37);
+            resources.ApplyResources(this.chbMinutes, "chbMinutes");
             this.chbMinutes.Name = "chbMinutes";
-            this.chbMinutes.Size = new System.Drawing.Size(65, 17);
-            this.chbMinutes.TabIndex = 1;
-            this.chbMinutes.Text = "Минуты";
             this.chbMinutes.UseVisualStyleBackColor = true;
             // 
             // chbSeconds
             // 
-            this.chbSeconds.AutoSize = true;
-            this.chbSeconds.Location = new System.Drawing.Point(12, 12);
+            resources.ApplyResources(this.chbSeconds, "chbSeconds");
             this.chbSeconds.Name = "chbSeconds";
-            this.chbSeconds.Size = new System.Drawing.Size(70, 17);
-            this.chbSeconds.TabIndex = 0;
-            this.chbSeconds.Text = "Секунды";
             this.chbSeconds.UseVisualStyleBackColor = true;
             // 
             // nudSecondsStep
             // 
-            this.nudSecondsStep.Location = new System.Drawing.Point(83, 9);
+            resources.ApplyResources(this.nudSecondsStep, "nudSecondsStep");
             this.nudSecondsStep.Maximum = new decimal(new int[] {
             1935228928,
             7,
             0,
             0});
             this.nudSecondsStep.Name = "nudSecondsStep";
-            this.nudSecondsStep.Size = new System.Drawing.Size(126, 20);
-            this.nudSecondsStep.TabIndex = 6;
-            this.nudSecondsStep.ThousandsSeparator = true;
             // 
             // btCalculate
             // 
-            this.btCalculate.Location = new System.Drawing.Point(73, 216);
+            resources.ApplyResources(this.btCalculate, "btCalculate");
             this.btCalculate.Name = "btCalculate";
-            this.btCalculate.Size = new System.Drawing.Size(75, 23);
-            this.btCalculate.TabIndex = 12;
-            this.btCalculate.Text = "Расчитать";
             this.btCalculate.UseVisualStyleBackColor = true;
             this.btCalculate.Click += new System.EventHandler(this.btCalculate_Click);
             // 
             // dgvEvents
             // 
+            resources.ApplyResources(this.dgvEvents, "dgvEvents");
             this.dgvEvents.AllowUserToAddRows = false;
             this.dgvEvents.AllowUserToDeleteRows = false;
             this.dgvEvents.AllowUserToResizeRows = false;
@@ -272,21 +214,17 @@
             this.dgvEvents.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colDate,
             this.colInfo});
-            this.dgvEvents.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvEvents.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dgvEvents.Location = new System.Drawing.Point(220, 0);
             this.dgvEvents.MultiSelect = false;
             this.dgvEvents.Name = "dgvEvents";
             this.dgvEvents.ReadOnly = true;
             this.dgvEvents.RowHeadersVisible = false;
             this.dgvEvents.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvEvents.Size = new System.Drawing.Size(345, 682);
-            this.dgvEvents.TabIndex = 1;
             // 
             // colDate
             // 
             this.colDate.DataPropertyName = "DateString";
-            this.colDate.HeaderText = "Дата";
+            resources.ApplyResources(this.colDate, "colDate");
             this.colDate.Name = "colDate";
             this.colDate.ReadOnly = true;
             // 
@@ -294,27 +232,23 @@
             // 
             this.colInfo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.colInfo.DataPropertyName = "Info";
-            this.colInfo.HeaderText = "Срок";
+            resources.ApplyResources(this.colInfo, "colInfo");
             this.colInfo.Name = "colInfo";
             this.colInfo.ReadOnly = true;
             // 
             // FormCalculations
             // 
             this.AcceptButton = this.btCalculate;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(565, 682);
             this.Controls.Add(this.dgvEvents);
             this.Controls.Add(this.pParameters);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormCalculations";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Расчеты";
             this.Load += new System.EventHandler(this.FormCalculations_Load);
             this.pParameters.ResumeLayout(false);
             this.pParameters.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.gbSorting.ResumeLayout(false);
+            this.gbSorting.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudMonthesStep)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudWeeksStep)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudDaysStep)).EndInit();
@@ -343,7 +277,7 @@
         private System.Windows.Forms.CheckBox chbHours;
         private System.Windows.Forms.CheckBox chbMinutes;
         private System.Windows.Forms.CheckBox chbSeconds;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gbSorting;
         private System.Windows.Forms.RadioButton rbResultByTypes;
         private System.Windows.Forms.RadioButton rbResultByDates;
         private System.Windows.Forms.DataGridViewTextBoxColumn colDate;

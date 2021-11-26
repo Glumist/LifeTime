@@ -5,7 +5,7 @@ using System.Text;
 using System.Xml.Serialization;
 using System.ComponentModel;
 
-namespace Days
+namespace LifeTime.Classes
 {
     [Serializable]
     public class DateEvent
@@ -345,6 +345,7 @@ namespace Days
                     }
                     else
                     {
+                        date = contact.BirthDate;
                         for (int i = 1; i <= 10; i++)
                         {
                             if (timeMeasure.Name == "Monthes")

@@ -1,4 +1,4 @@
-﻿namespace Days
+﻿namespace LifeTime.Forms
 {
     partial class FormSettings
     {

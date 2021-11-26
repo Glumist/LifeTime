@@ -6,8 +6,10 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using LifeTime.Classes;
+using LifeTime.Properties;
 
-namespace Days
+namespace LifeTime.Forms
 {
     public partial class FormAddContact : Form
     {
@@ -27,7 +29,7 @@ namespace Days
             tbFio.Text = contact.Fio;
             dtpBirth.Value = contact.BirthDate;
             tbInfo.Text = contact.Info;
-            Text = "Редактируем контакт";
+            Text = Resources.ResourceManager.GetString("FormAddContact_EditText");
         }
 
         private void btCancel_Click(object sender, EventArgs e)
@@ -41,8 +43,10 @@ namespace Days
             if (EditedContact != null)
             {
                 if (newDate != EditedContact.BirthDate)
-                    if (MessageBox.Show("Перерасчитать события?", "Новая дата", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
+                {
+                    if (MessageBox.Show(Resources.ResourceManager.GetString("NewDate_Question"), Resources.ResourceManager.GetString("NewDate_Caption"), MessageBoxButtons.YesNo) == DialogResult.Yes)
                         Recalc = true;
+                }
                 EditedContact.Fio = tbFio.Text;
                 EditedContact.Info = tbInfo.Text;
                 EditedContact.BirthDate = newDate;
@@ -52,7 +56,7 @@ namespace Days
                 EditedContact = new Contact(tbFio.Text, newDate, tbInfo.Text);
             }
 
-            DialogResult = System.Windows.Forms.DialogResult.OK;
+            DialogResult = DialogResult.OK;
         }
 
         private DateTime GetDate()

@@ -117,13 +117,107 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="colDate.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="colInfo.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
+  <data name="&gt;&gt;chbHours.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;colDate.Name" xml:space="preserve">
+    <value>colDate</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="rbResultByDates.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pParameters.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="gbSorting.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 45</value>
+  </data>
+  <data name="&gt;&gt;chbMinutes.Name" xml:space="preserve">
+    <value>chbMinutes</value>
+  </data>
+  <data name="rbResultByTypes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 13</value>
+  </data>
+  <data name="&gt;&gt;chbMinutes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nudDaysStep.Parent" xml:space="preserve">
+    <value>pParameters</value>
+  </data>
+  <data name="&gt;&gt;nudMonthesStep.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;nudDaysStep.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="chbWeeks.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="pParameters.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 682</value>
+  </data>
+  <data name="btCalculate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="&gt;&gt;chbWeeks.Name" xml:space="preserve">
+    <value>chbWeeks</value>
+  </data>
+  <data name="&gt;&gt;chbMonthes.Parent" xml:space="preserve">
+    <value>pParameters</value>
+  </data>
+  <data name="&gt;&gt;nudDaysStep.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbResultByDates.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>565, 682</value>
+  </data>
+  <data name="&gt;&gt;rbResultByTypes.Parent" xml:space="preserve">
+    <value>gbSorting</value>
+  </data>
+  <data name="nudHoursStep.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;nudHoursStep.Parent" xml:space="preserve">
+    <value>pParameters</value>
+  </data>
+  <data name="&gt;&gt;chbSeconds.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="rbResultByTypes.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="chbMinutes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="nudMinutesStep.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 20</value>
+  </data>
+  <data name="nudMonthesStep.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;rbResultByDates.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chbMonthes.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;colDate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nudSecondsStep.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;rbResultByTypes.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA
@@ -148,4 +242,377 @@
         AADAAwAAwAMAAA==
 </value>
   </data>
+  <data name="pParameters.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="chbMinutes.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colDate.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;pParameters.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dgvEvents.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;rbResultByTypes.Name" xml:space="preserve">
+    <value>rbResultByTypes</value>
+  </data>
+  <data name="rbResultByDates.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 13</value>
+  </data>
+  <data name="&gt;&gt;pParameters.Name" xml:space="preserve">
+    <value>pParameters</value>
+  </data>
+  <data name="chbDays.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 89</value>
+  </data>
+  <data name="chbDays.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;nudHoursStep.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="chbMonthes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 141</value>
+  </data>
+  <data name="&gt;&gt;btCalculate.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;chbMinutes.Parent" xml:space="preserve">
+    <value>pParameters</value>
+  </data>
+  <data name="pParameters.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="nudSecondsStep.ThousandsSeparator" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rbResultByTypes.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;nudSecondsStep.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="nudMonthesStep.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 20</value>
+  </data>
+  <data name="chbMinutes.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;nudWeeksStep.Name" xml:space="preserve">
+    <value>nudWeeksStep</value>
+  </data>
+  <data name="nudWeeksStep.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;chbSeconds.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbSorting.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nudMinutesStep.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chbHours.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="nudMinutesStep.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="nudHoursStep.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 20</value>
+  </data>
+  <data name="gbSorting.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;nudMonthesStep.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbResultByDates.Parent" xml:space="preserve">
+    <value>gbSorting</value>
+  </data>
+  <data name="nudSecondsStep.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="nudDaysStep.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 87</value>
+  </data>
+  <data name="&gt;&gt;nudMinutesStep.Name" xml:space="preserve">
+    <value>nudMinutesStep</value>
+  </data>
+  <data name="&gt;&gt;chbMonthes.Name" xml:space="preserve">
+    <value>chbMonthes</value>
+  </data>
+  <data name="&gt;&gt;chbHours.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chbHours.Name" xml:space="preserve">
+    <value>chbHours</value>
+  </data>
+  <data name="nudSecondsStep.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 9</value>
+  </data>
+  <data name="nudWeeksStep.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 113</value>
+  </data>
+  <data name="&gt;&gt;rbResultByDates.Name" xml:space="preserve">
+    <value>rbResultByDates</value>
+  </data>
+  <data name="&gt;&gt;nudMonthesStep.Name" xml:space="preserve">
+    <value>nudMonthesStep</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="&gt;&gt;nudMinutesStep.Parent" xml:space="preserve">
+    <value>pParameters</value>
+  </data>
+  <data name="&gt;&gt;colInfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chbDays.Name" xml:space="preserve">
+    <value>chbDays</value>
+  </data>
+  <data name="chbDays.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;nudSecondsStep.Name" xml:space="preserve">
+    <value>nudSecondsStep</value>
+  </data>
+  <data name="&gt;&gt;chbWeeks.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btCalculate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvEvents.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbSorting.Parent" xml:space="preserve">
+    <value>pParameters</value>
+  </data>
+  <data name="&gt;&gt;btCalculate.Name" xml:space="preserve">
+    <value>btCalculate</value>
+  </data>
+  <data name="nudHoursStep.ThousandsSeparator" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;rbResultByTypes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="nudMonthesStep.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 139</value>
+  </data>
+  <data name="gbSorting.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 165</value>
+  </data>
+  <data name="chbHours.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="chbSeconds.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="nudDaysStep.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="nudMonthesStep.ThousandsSeparator" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;gbSorting.Name" xml:space="preserve">
+    <value>gbSorting</value>
+  </data>
+  <data name="rbResultByDates.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 19</value>
+  </data>
+  <data name="&gt;&gt;chbWeeks.Parent" xml:space="preserve">
+    <value>pParameters</value>
+  </data>
+  <data name="&gt;&gt;dgvEvents.Name" xml:space="preserve">
+    <value>dgvEvents</value>
+  </data>
+  <data name="&gt;&gt;nudWeeksStep.Parent" xml:space="preserve">
+    <value>pParameters</value>
+  </data>
+  <data name="dgvEvents.Size" type="System.Drawing.Size, System.Drawing">
+    <value>345, 682</value>
+  </data>
+  <data name="chbDays.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="chbMonthes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="&gt;&gt;chbMonthes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chbSeconds.Name" xml:space="preserve">
+    <value>chbSeconds</value>
+  </data>
+  <data name="chbHours.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="pParameters.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="rbResultByTypes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 19</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormCalculations</value>
+  </data>
+  <data name="chbWeeks.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 115</value>
+  </data>
+  <data name="&gt;&gt;chbHours.Parent" xml:space="preserve">
+    <value>pParameters</value>
+  </data>
+  <data name="chbWeeks.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="&gt;&gt;nudWeeksStep.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chbWeeks.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="nudMinutesStep.ThousandsSeparator" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;chbSeconds.Parent" xml:space="preserve">
+    <value>pParameters</value>
+  </data>
+  <data name="&gt;&gt;gbSorting.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="nudHoursStep.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 61</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pParameters.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="colInfo.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;nudWeeksStep.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="chbSeconds.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="chbMinutes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 37</value>
+  </data>
+  <data name="nudDaysStep.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 20</value>
+  </data>
+  <data name="&gt;&gt;nudMonthesStep.Parent" xml:space="preserve">
+    <value>pParameters</value>
+  </data>
+  <data name="nudDaysStep.ThousandsSeparator" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="dgvEvents.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;chbMonthes.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;nudHoursStep.Name" xml:space="preserve">
+    <value>nudHoursStep</value>
+  </data>
+  <data name="&gt;&gt;nudDaysStep.Name" xml:space="preserve">
+    <value>nudDaysStep</value>
+  </data>
+  <data name="&gt;&gt;chbDays.Parent" xml:space="preserve">
+    <value>pParameters</value>
+  </data>
+  <data name="nudWeeksStep.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 20</value>
+  </data>
+  <data name="&gt;&gt;chbDays.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvEvents.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="chbSeconds.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;btCalculate.Parent" xml:space="preserve">
+    <value>pParameters</value>
+  </data>
+  <data name="chbMonthes.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;colInfo.Name" xml:space="preserve">
+    <value>colInfo</value>
+  </data>
+  <data name="dgvEvents.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="nudMinutesStep.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 35</value>
+  </data>
+  <data name="rbResultByDates.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chbHours.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 63</value>
+  </data>
+  <data name="&gt;&gt;nudHoursStep.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btCalculate.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;nudMinutesStep.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="dgvEvents.Location" type="System.Drawing.Point, System.Drawing">
+    <value>220, 0</value>
+  </data>
+  <data name="chbWeeks.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="nudSecondsStep.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 20</value>
+  </data>
+  <data name="nudWeeksStep.ThousandsSeparator" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btCalculate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 216</value>
+  </data>
+  <data name="&gt;&gt;chbDays.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;nudSecondsStep.Parent" xml:space="preserve">
+    <value>pParameters</value>
+  </data>
+  <data name="&gt;&gt;chbMinutes.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="chbSeconds.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <metadata name="colDate.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colInfo.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>ru-RU</value>
+  </metadata>
 </root>

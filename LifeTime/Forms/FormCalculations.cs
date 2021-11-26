@@ -6,15 +6,16 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using LifeTime.Classes;
 
-namespace Days
+namespace LifeTime.Forms
 {
     public partial class FormCalculations : Form
     {
         DateTime _startDate = DateTime.Now;
         Settings _settings = null;
 
-        public FormCalculations(string fio, DateTime startDate, Settings settings)
+        public FormCalculations(string fio, DateTime startDate, Classes.Settings settings)
         {
             InitializeComponent();
             _startDate = startDate;

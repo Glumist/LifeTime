@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Days
+namespace LifeTime.Forms
 {
     public partial class FormChangeHour : Form
     {
@@ -24,7 +24,7 @@ namespace Days
             Forward = rbForward.Checked;
             TimeShift = TimeSpan.FromHours(dtpTimeShift.Value.Hour) + TimeSpan.FromMinutes(dtpTimeShift.Value.Minute);
 
-            DialogResult = System.Windows.Forms.DialogResult.OK;
+            DialogResult = DialogResult.OK;
         }
     }
 }

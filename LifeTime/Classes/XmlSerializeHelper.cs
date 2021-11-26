@@ -6,7 +6,7 @@ using System.IO;
 using System.Windows.Forms;
 using System.Xml.Serialization;
 
-namespace Days
+namespace LifeTime.Classes
 {
     public static class XmlSerializeHelper
     {

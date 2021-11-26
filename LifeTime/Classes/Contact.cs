@@ -5,7 +5,7 @@ using System.Text;
 using System.Xml.Serialization;
 using System.ComponentModel;
 
-namespace Days
+namespace LifeTime.Classes
 {
     public class Contact
     {

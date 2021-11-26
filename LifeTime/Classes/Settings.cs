@@ -4,8 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Xml.Serialization;
 using System.ComponentModel;
+using System.Globalization;
+using LifeTime.Enums;
+using System.Threading;
 
-namespace Days
+namespace LifeTime.Classes
 {
     public class Settings
     {
@@ -262,6 +265,14 @@ namespace Days
             set { _contactSort = value; }
         }
 
+        private AvailableLocalizations _currentLocalization = AvailableLocalizations.English;
+        [DefaultValue(AvailableLocalizations.English)]
+        public AvailableLocalizations CurrentLocalization
+        {
+            get { return _currentLocalization; }
+            set { _currentLocalization = value; }
+        }
+
         [XmlIgnore]
         public List<double> MidNums
         {
@@ -296,6 +307,17 @@ namespace Days
             {
                 return new Settings();
             }
+        }
+
+        internal CultureInfo GetCulture()
+        {
+            return new CultureInfo(EnumHelper.GetEnumDescription(CurrentLocalization));
+        }
+
+        internal void SetCulture(AvailableLocalizations newLocalization)
+        {
+            CurrentLocalization = newLocalization;
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(EnumHelper.GetEnumDescription(CurrentLocalization));
         }
     }
 }

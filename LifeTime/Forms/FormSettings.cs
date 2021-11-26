@@ -6,8 +6,9 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using LifeTime.Classes;
 
-namespace Days
+namespace LifeTime.Forms
 {
     public partial class FormSettings : Form
     {
@@ -51,7 +52,7 @@ namespace Days
             editedSettings.UseSameDigitsCalc = chbSameDigits.Checked;
             editedSettings.MidNumsString = tbMidNums.Text;
 
-            DialogResult = System.Windows.Forms.DialogResult.OK;
+            DialogResult = DialogResult.OK;
         }
     }
 }

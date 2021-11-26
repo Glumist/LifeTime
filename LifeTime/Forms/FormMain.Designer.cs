@@ -1,4 +1,4 @@
-﻿namespace Days
+﻿namespace LifeTime.Forms
 {
     partial class FormMain
     {
@@ -67,6 +67,7 @@
             this.tsmiSettings = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiRecalc = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiAbout = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiLanguage = new System.Windows.Forms.ToolStripMenuItem();
             this.niMain = new System.Windows.Forms.NotifyIcon(this.components);
             this.cmsTray = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tsmiShow = new System.Windows.Forms.ToolStripMenuItem();
@@ -427,7 +428,8 @@
             this.msMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmiSettings,
             this.tsmiRecalc,
-            this.tsmiAbout});
+            this.tsmiAbout,
+            this.tsmiLanguage});
             this.msMain.Location = new System.Drawing.Point(0, 0);
             this.msMain.Name = "msMain";
             this.msMain.Size = new System.Drawing.Size(975, 24);
@@ -457,6 +459,12 @@
             this.tsmiAbout.Size = new System.Drawing.Size(94, 20);
             this.tsmiAbout.Text = "О программе";
             this.tsmiAbout.Click += new System.EventHandler(this.tsmiAbout_Click);
+            // 
+            // tsmiLanguage
+            // 
+            this.tsmiLanguage.Name = "tsmiLanguage";
+            this.tsmiLanguage.Size = new System.Drawing.Size(46, 20);
+            this.tsmiLanguage.Text = "Язык";
             // 
             // niMain
             // 
@@ -575,6 +583,7 @@
         private System.Windows.Forms.ToolStripMenuItem tsmiRemoveContact;
         private System.Windows.Forms.ToolStripTextBox tstbFilter;
         private System.Windows.Forms.ToolStripMenuItem tsmiEnableFilter;
+        private System.Windows.Forms.ToolStripMenuItem tsmiLanguage;
     }
 }
 

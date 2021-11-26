@@ -6,8 +6,12 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using LifeTime.Classes;
+using LifeTime.Enums;
+using System.Globalization;
+using System.Threading;
 
-namespace Days
+namespace LifeTime.Forms
 {
     public partial class FormMain : Form
     {
@@ -16,7 +20,7 @@ namespace Days
         private DateEventCollection dateEvents;
         private Settings settings;
         private bool formMaximized = false;
-        private const string version = "1.1.3";
+        private const string version = "1.2.0";
 
         private BackgroundWorker bgwLoader;
 
@@ -28,6 +32,8 @@ namespace Days
             dgvPastEvents.AutoGenerateColumns = false;
 
             tsslContactCount.Alignment = ToolStripItemAlignment.Right;
+
+            AddLanguageMenuItems();
 
             bgwLoader = new BackgroundWorker();
             bgwLoader.DoWork += bgwLoader_DoWork;
@@ -55,6 +61,18 @@ namespace Days
 
         #region Load
 
+        private void AddLanguageMenuItems()
+        {
+            foreach (AvailableLocalizations language in Enum.GetValues(typeof(AvailableLocalizations)))
+            {
+                CultureInfo langInfo = new CultureInfo(EnumHelper.GetEnumDescription(language));
+                ToolStripMenuItem langItem = new ToolStripMenuItem(langInfo.DisplayName);
+                langItem.Tag = language;
+                tsmiLanguage.DropDownItems.Add(langItem);
+                langItem.Click += LangItem_Click;
+            }
+        }
+
         private void FormMain_Load(object sender, EventArgs e)
         {
             formMaximized = this.WindowState == FormWindowState.Maximized;
@@ -78,6 +96,8 @@ namespace Days
 
             tMain.Interval = (int)(DateTime.Now.AddDays(1).Date - DateTime.Now).TotalMilliseconds;
             tMain.Enabled = true;
+
+            ApplyLanguage();
         }
 
         #endregion
@@ -85,7 +105,7 @@ namespace Days
         private void AddContact()
         {
             FormAddContact formAddContact = new FormAddContact();
-            if (formAddContact.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            if (formAddContact.ShowDialog() == DialogResult.OK)
             {
                 Contact contact = formAddContact.EditedContact;
                 contacts.Add(contact, settings.ContactSort);
@@ -107,7 +127,7 @@ namespace Days
             if (dgvContacts.SelectedRows.Count <= 0)
                 return;
             FormAddContact formAddContact = new FormAddContact(dgvContacts.SelectedRows[0].DataBoundItem as Contact);
-            if (formAddContact.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            if (formAddContact.ShowDialog() == DialogResult.OK)
             {
                 contacts.Save();
                 if (formAddContact.Recalc)
@@ -125,7 +145,7 @@ namespace Days
             if (dgvContacts.SelectedRows.Count > 0)
             {
                 Contact contactTodelete = dgvContacts.SelectedRows[0].DataBoundItem as Contact;
-                if (MessageBox.Show("Вы уверены что хотите удалить контакт " + contactTodelete.Fio, "Удаление", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
+                if (MessageBox.Show("Вы уверены что хотите удалить контакт " + contactTodelete.Fio, "Удаление", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
                     contacts.Remove(contactTodelete);
                     contacts.Save();
@@ -159,6 +179,13 @@ namespace Days
                     Contact contact = (dgv.SelectedRows[0].DataBoundItem as DateEvent).Contact;
                     SelectContact(contact);
                 }
+        }
+
+        private void ApplyLanguage()
+        {
+            foreach (ToolStripMenuItem item in tsmiLanguage.DropDownItems)
+                item.Checked = (AvailableLocalizations)item.Tag == settings.CurrentLocalization;
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(EnumHelper.GetEnumDescription(settings.CurrentLocalization));
         }
 
         #region Tables
@@ -359,6 +386,15 @@ namespace Days
         {
             RefreshTables();
             tscbContactSort_SelectedIndexChanged(sender, e);
+        }
+
+        private void LangItem_Click(object sender, EventArgs e)
+        {
+            ToolStripMenuItem langItem = (ToolStripMenuItem)sender;
+            settings.CurrentLocalization = (AvailableLocalizations)langItem.Tag;
+            settings.Save();
+
+            ApplyLanguage();
         }
 
         #endregion

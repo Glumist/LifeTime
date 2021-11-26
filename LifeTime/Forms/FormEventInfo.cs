@@ -6,8 +6,9 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using LifeTime.Classes;
 
-namespace Days
+namespace LifeTime.Forms
 {
     public partial class FormEventInfo : Form
     {
